@@ -1,0 +1,15 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'MiddleEarth', sans-serif;
+}
+
+@font-face {
+    font-family: 'MiddleEarth';
+    src: url(/kod/fonts/Middleearth-ao6m.ttf);
+}
+
+img {
+    width: 100%;
+    height: 800px;
+}

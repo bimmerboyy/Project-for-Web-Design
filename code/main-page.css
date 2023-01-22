@@ -1,4 +1,4 @@
-* {
+/* * {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'MiddleEarth', sans-serif;
@@ -12,4 +12,363 @@
 img {
     width: 100%;
     height: 800px;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Istok+Web:400");
+
+.desktop-1{
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    height: 1060px;
+    width: 1440px;
+}
+.hidden,
+.hidden *{
+    pointer-events: none;
+    visibility:hidden;
+}
+.main-content{
+    align-items: flex-start;
+    background-image:url(../code/images/main-picture.jpg);
+    background-position: 50% 50%;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    min-height:682px;
+    padding: 155px 137px;
+    width: 1440px;
+}
+.overlap-group3{
+    height: 45px;
+    margin-top:168px;
+    position: relative;
+    width: 271px;
+}
+.title{
+    color: var(--dirt);
+    font-family: var(--font-family-istok_web);
+    font-size:var(--font-size-xxl);
+    font-weight: 400;
+    left: 9px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align:center;
+    top:0;
+    width: 262px;
+}
+.the-ring-of-power{
+    color: var(--dirt);
+    font-family: var(--font-family-istok_web);
+    font-size:var(--font-size-xl);
+    font-weight: 400;
+    left:0;
+    letter-spacing: 0;
+    line-height:normal;
+    position: absolute;
+    text-align: center;
+    top: 27px;
+    width:202px;
+
+}
+.overlap-group4{
+    align-items: flex-start;
+    background-color: var(--dirt);
+    display: flex;
+    height: 36px;
+    justify-content:flex-end;
+    margin-left:18px;
+    margin-top:14px;
+    min-width:177px;
+    padding: 5px 43px;
+}
+
+.gledaj{
+    height: 23px;
+    letter-spacing:0;
+    line-height:normal;
+    width: 74px;
+}
+.valign-text-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.the-lord-of-ring{
+    color: var(--dirt);
+    font-family: var(--font-family-istok_web);
+    font-size:var(--font-size-xs);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height:normal;
+    margin-left:16px;
+    margin-top:11px;
+    width: 255px;
+   
+}
+
+.overlap-group6{
+    height: 320px;
+    position: relative;
+    width: 1440px;
+}
+.third-layout{
+    align-items:flex-start;
+    display: flex;
+    height: 284px;
+    left:0;
+    position:absolute;
+    top:0;
+    width: 1440px;
+
+}
+.overlap-group2{
+    height: 285px;
+    margin-top:-1;
+    position: relative;
+    width: 1440px;
+
+}
+.info{
+    align-items: center;
+    background-color: #1c2227;
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    height: 284px;
+    left:0;
+    padding: 23px 0;
+    position:absolute;
+    top:1px;
+    width:505px;
+
+}
+.overlap-group1{
+    height: 192px;
+    margin-top: 14px;
+    position: relative;
+    width: 399px;
+}
+.oaza-serija{
+    height: 29px;
+    left: 112px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top:0;
+}
+.info-text{
+    height: 172px;
+    left: 0;
+    letter-spacing:0;
+    line-height:normal;
+    position: absolute;
+    top: 20px;
+    width: 399px;
+
+}
+.span{
+    color: var(--boulder);
+    font-family: var(--font-family-istok_web);
+    font-size:var(--font-size-xs);
+    font-weight: 400;
+}
+
+.overlap-group1{
+    align-items: flex-start;
+    background-color: #1c2226;
+    border: 1px solid;
+    border-color: var(--dirt);
+    display: flex;
+    height: 30px;
+    margin-right: 96px;
+    min-width: 177px;
+    padding:2px 58px;
+
+
+}
+.vise-info{
+    color:var(--bison-hide);
+    font-family: var(--font-family-istok_web);
+    font-size:var(--font-size-l);
+    font-weight: 400;
+    height: 22px;
+    letter-spacing:0;
+    line-height:normal;
+    min-width:59px;
+    text-align: center;
+
+}
+.images{
+    align-items: flex-end;
+    display: flex;
+    height: 285px;
+    left: 503px;
+    position: absolute;
+    top: 0;
+    width: 937px;
+}
+.screenshot-from-2023-01-22-18-04-05-1{
+    height: 284px;
+    object-fit: cover;
+    width: 937px;
+}
+.footer{
+    align-items: flex-start;
+    background-color: #151515;
+    display: flex;
+    flex-direction: row;
+    height: 37px;
+    justify-content: flex-start;
+    left: 0;
+    mix-blend-mode:normal;
+    padding: 9px 485px;
+    position: absolute;
+    top:283px;
+    width: 1440px;
+
+}
+.sajt-je-izradio-tari{
+    color:var(--boulder);
+    font-family: var(--font-family-istok_web);
+    font-size:var(--font-size-s);
+    font-weight: 400;
+    height: 18px;
+    letter-spacing: normal;
+    margin-left:39px;
+    width: 431px;
+
+}
+.navbar{
+    align-items: center;
+    background-color: #1d2429;
+    border-color:var(--black);
+    border-right-style:solid;
+    border-right-width: 0.5px;
+    display: flex;
+    padding: 0 4px;
+    width: 1440px;
+}
+.overlap-group{
+    align-items: flex-end;
+    background-color: #956e4e;
+    display: flex;
+    height: 36px;
+    margin-left: 22px;
+    margin-top: 2px;
+    min-width: 135px;
+    padding: 6px 18px;
+}
+.uloguj-se{
+    color:#ccc8b6;
+    font-family: var(--font-family-istok_web);
+    font-size:var(--font-size-l);
+    font-weight: 400;
+    height: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    width: 96px;
+    
+}
+.logo-container{
+    height: 58px;
+    position: relative;
+    width: 248px;
+}
+.logo-frame{
+    align-items: flex-start;
+    border-color: var(--gravel);
+    border-right-style:solid;
+    border-right-width:1px;
+    display: flex;
+    gap:10px;
+    height: 58px;
+    left: 0;
+    padding: 10px 114px 10px 10px;
+    position: absolute;
+    top: 0;
+    width: 248px;
+}
+.logo-frame-item{
+    height: 38px;
+    letter-spacing: 0;
+    line-height:normal;
+    margin-top:-1px;
+    width: 25px;
+}
+.logo-1{
+    height: 56px;
+    left: 99px;
+    object-fit:cover;
+    position: absolute;
+    top: 1px;
+    width: 81px;
+}
+.navbar-1{
+    align-items: center;
+    border-color:var(--gravel);
+    border-right-style: solid;
+    border-right-width: 1px;
+    display: flex;
+    height: 58px;
+    padding: 0 26px;
+    width: 840px;
+
+}
+.navbar-link-novosti{
+    margin-left: 50px;
+    min-width: 65px; 
+}
+.desktop-1 .navbar-link{
+    letter-spacing: 0;
+    line-height:normal;
+    margin-top:2px;
+    min-height:22px;
+
+}
+.screenshot-from-2023-01-22-15-40-36-1{
+    height: 47px;
+    margin-left: 11px;
+    margin-top:5px;
+    object-fit: cover;
+    width: 38px;
+}
+.navbar-link-kontakt{
+    margin-left: 50px;
+    min-width: 68px;
+}
+.navbar-link-onama{
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 50px;
+    margin-top: 2px;
+    min-height: 22px;
+    min-width: 60px;
+}
+.navbar-link-poetna{
+    margin-left: 57px;
+    min-width:70px;
+}
+.screenshot-from-2023-01-22-15-38-55-1{
+    align-self:flex-start;
+    height: 55px;
+    margin-left: 58px;
+    object-fit: cover;
+    width: 113px;
+}
+.navbar-link-serije{
+    margin-left: 50px;
+    min-width: 48px;
+}
+.screenshot-from-2023-01-22-15-49-48-1{
+    height: 30px;
+    margin-left: 22px;
+    margin-top: 4px;
+    object-fit: cover;
+    width: 92px;
 }

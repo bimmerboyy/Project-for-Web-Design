@@ -1,0 +1,211 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    /* font-family: 'MiddleEarth', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'MiddleEarth';
+    src: url(/kod/fonts/Middleearth-ao6m.ttf);
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/*navbar styling */
+
+.navbar {
+    height: 58px;
+    background-color: #1e2429;
+    width: 100%;
+    display: flex;
+}
+
+.first-section {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #494848;
+    height: 58px;
+}
+
+.first-section img {
+    width: 81px;
+    margin-left: 100px;
+}
+
+.first-section a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #a67c56;
+}
+
+.first-section .translators {
+    margin-left: 30px;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    border-right: 1px solid #494848;
+}
+
+.middle-section .bela-vatra-icon img {
+    width: 38px;
+}
+
+.middle-section .kraj-headera img {
+    width: 113px;
+}
+
+.middle-section a {
+    text-decoration: none;
+    color: #71797b;
+}
+
+.middle-section a:hover {
+    color: rgb(175, 175, 175);
+}
+
+.middle-section .bela-vatra-icon {
+    margin-left: 100px;
+}
+
+.middle-section .navigation {
+    width: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.third-section {
+    display: flex;
+    align-self: center;
+}
+
+.third-section img {
+    width: 100px;
+}
+
+.third-section button {
+    background-color: #926e45;
+    color: #ccc987;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    padding: 10px 35px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.third-section img {
+    margin-left: 50px;
+}
+
+.third-section button:hover {
+    background-color: rgb(180, 134, 96);
+}
+
+.middle-section .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+}
+
+.middle-section .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #71797b;
+    border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+    .middle-section .toggle-button {
+        display: flex;
+    }
+    .middle-section .navigation {
+        display: none;
+        position: absolute;
+        top: 58.2px;
+        right: 0;
+        width: 1900px;
+    }
+    .middle-section .navigation {
+        flex-direction: column;
+    }
+    .middle-section .navigation div {
+        width: 100%;
+        background-color: #1e2429;
+        text-align: center;
+    }
+    .middle-section .navigation div:hover {
+        background-color: #404e5a;
+    }
+    .first-section {
+        border: none;
+    }
+    .navigation.active {
+        display: flex;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .navbar {
+        position: relative;
+    }
+    .third-section img {
+        display: none;
+    }
+    .third-section button {
+        position: absolute;
+        right: 100px;
+        bottom: 10px;
+    }
+    .third-section {
+        border: none;
+    }
+    .middle-section img {
+        display: none;
+    }
+    .middle-section .navigation {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .middle-section .navigation {
+        width: 500px;
+    }
+    .first-section img {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .middle-section .navigation {
+        width: 400px;
+    }
+    .first-section img {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .middle-section .navigation {
+        width: 400px;
+    }
+    .first-section img {
+        margin-left: 20px;
+    }
+}

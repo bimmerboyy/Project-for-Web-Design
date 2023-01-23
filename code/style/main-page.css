@@ -44,6 +44,10 @@ body {
     color: #a67c56;
 }
 
+.first-section a:hover {
+    color: rgb(220, 164, 117);
+}
+
 .first-section .translators {
     margin-left: 30px;
 }
@@ -138,7 +142,6 @@ body {
         position: absolute;
         top: 58.2px;
         right: 0;
-        width: 1900px;
     }
     .middle-section .navigation {
         flex-direction: column;
@@ -157,6 +160,7 @@ body {
     .navigation.active {
         display: flex;
         width: 100% !important;
+        z-index: 2;
     }
 }
 
@@ -207,5 +211,90 @@ body {
     }
     .first-section img {
         margin-left: 20px;
+    }
+}
+
+
+/* Main content*/
+
+.main-content {
+    background-image: url(../images/main-picture.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.main-content .lord-of-rings {
+    position: absolute;
+    top: 40%;
+}
+
+.main-content p {
+    width: 400px;
+    color: #a67c56;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.main-content .title {
+    color: #a67c56;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-family: 'MiddleEarth';
+}
+
+.main-content .the-ring-of-power {
+    color: #a67c56;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: 'MiddleEarth';
+}
+
+.main-content .gledaj {
+    padding: 15px 100px;
+    background-color: #926e45;
+    color: #ccc987;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.main-content .gledaj:hover {
+    background-color: rgb(180, 134, 96);
+}
+
+@media (max-width: 740px) {
+    .main-content .lord-of-rings {
+        left: 150px;
+    }
+}
+
+@media (max-width: 710px) {
+    .main-content .lord-of-rings {
+        left: 100px;
+    }
+}
+
+.lord-of-rings.popup {
+    animation-name: popup;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popup {
+    0% {
+        transform: translateX(-500px);
+        opacity: 50%;
+    }
+    100% {
+        transform: translateX(230px);
+        opacity: 1;
     }
 }

@@ -8,10 +8,86 @@
     <title>Oaza Serija</title>
     <link rel="icon" href="../images/LOGO.png">
     <link rel="stylesheet" href="../style/grid-cards.css">
+
+
 </head>
 
-<body>
+<body onload='getApi()'>
 
+    <div class="navbar">
+        <div class="first-section">
+            <div class="translators">
+                <a href="">ENG</a>
+                <a href="">SRB</a>
+            </div>
+
+            <div class="logo">
+                <img src="../images/LOGO.png" alt="LOGO">
+            </div>
+
+        </div>
+        <div class="middle-section">
+            <div class="bela-vatra-icon">
+                <img src="../images/pocetak-headera.png" alt="bela-vatra-icon">
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navigation">
+                <div><a href="">POČETNA</a></div>
+                <div> <a href="">SERIJE</a></div>
+                <div> <a href="">NOVOSTI</a></div>
+                <div> <a href="">KONTAKT</a></div>
+                <div> <a href="">O NAMA</a></div>
+            </div>
+
+            <div class="kraj-headera">
+                <img src="../images/kraj-headera.png" alt="kraj-headera">
+            </div>
+
+        </div>
+        <div class="third-section">
+            <button class="uloguj-se"><span>ULOGUJ</span> &nbsp; <span>SE</span>  </button>
+            <img src="../images/pored-btn.png" alt="pocetak-btn">
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="select-df">
+            <div class="select">
+                <select name="format" id="format">
+                    <option selected disabled>Izaberi žanr</option>
+                    <option value="drama">Drama</option>
+                    <option value="action">Action</option>
+        
+                </select>
+            </div>
+
+        </div>
+
+        <div class="cards">
+            <div class="grid-card">
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="footer">
+        <p>Sajt izradio Tarik Kučević.© Zaštićen autorskim pravima.Novi Pazar,Srbija.</p>
+    </div>
+
+
+    <script src="../script/grid-cards.js" defer></script>
 </body>
 
 </html>

@@ -297,6 +297,7 @@
                             opacity: 1;
                         }
                     }
+                    /*Bottom content*/
                     
                     .bottom-content {
                         display: flex;
@@ -358,6 +359,7 @@
                         width: 100%;
                         height: 100%;
                     }
+                    /*footer*/
                     
                     .footer {
                         background-color: black;

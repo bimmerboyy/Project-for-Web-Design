@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/main-page.css">
     <title>Oaza Serija</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+
+
 </head>
 
 <body>
@@ -51,7 +55,7 @@
 
         </div>
         <div class="third-section">
-            <button>ULOGUJ SE</button>
+            <button class="uloguj-se"><span>ULOGUJ</span> &nbsp; <span>SE</span>  </button>
             <img src="../images/pored-btn.png" alt="pocetak-btn">
         </div>
     </div>
@@ -73,8 +77,49 @@
         </div>
 
     </div>
+    <div class="bottom-content">
+        <div class="left-section">
+            <p class="oaza-serija">Oaza Serija</p>
+            <p class="info">
+                Dobrodošli na našu web stranicu, vašu krajnju destinaciju za sve TV serije! Ovdje ćete pronaći informacije o najnovijim i najboljim emisijama, kao i o klasicima koji su izdržali test vremena. Naš tim stručnjaka stalno ažurira stranicu novim recenzijama,
+                intervjuima i vijestima o vašim omiljenim serijama, stoga se često vraćajte. Bilo da ste ljubitelj drame, komedije ili akcije, imamo ponešto za svakoga. Hvala na posjeti i ugodno pregledavanje!
+            </p>
+            <button class="vise-info">Više Info</button>
+        </div>
+        <div class="right-section">
+            <div class="images">
+             
+                <div class="swiper">
+          
+                    <div class="swiper-wrapper">
+     
+                        <div class="swiper-slide" > <img src="../images/vatra.png" alt=""></div>
+                        <div class="swiper-slide" ><img src="../images/LOTR-ultrawide-1440-16x9-1-scaled.jpg" alt=""></div>
+                        <div class="swiper-slide" ><img src="../images/the-lord-of-the-rings-the-fellowship-of-the-ring-hd-wallpaper-5120x2160.jpg" alt=""></div>
+            </div>  </div>
+        </div>
+                </div>
+               
 
-
+               
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+        autoplay:{
+            delay:2000,
+            disableOnInteraction:false,
+         
+        },
+        speed:1200,
+            
+        
+  loop: true,
+});
+    </script>
+   
+   
     <script src="../script/main-page.js"></script>
 </body>
 

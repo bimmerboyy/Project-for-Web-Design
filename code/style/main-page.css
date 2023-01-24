@@ -89,14 +89,16 @@ body {
 
 .third-section {
     display: flex;
-    align-self: center;
+    align-items: center;
 }
 
 .third-section img {
-    width: 100px;
+    width: 70px;
+    margin-right:30px;
+    height:40px;
 }
 
-.third-section button {
+.third-section .uloguj-se {
     background-color: #926e45;
     color: #ccc987;
     font-weight: 600;
@@ -105,6 +107,8 @@ body {
     padding: 10px 35px;
     margin-left: 80px;
     cursor: pointer;
+    display: flex;
+   
 }
 
 .third-section img {
@@ -297,4 +301,71 @@ body {
         transform: translateX(230px);
         opacity: 1;
     }
+}
+
+.bottom-content {
+    display: flex;
+    height: 400px;
+}
+
+.bottom-content .left-section {
+    width: 800px;
+    background-color: #1c2227;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.bottom-content .left-section .oaza-serija {
+    color: #ccc987;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bottom-content .left-section .info {
+    color: #71797b;
+    width: 600px;
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.bottom-content .left-section button {
+    padding: 10px 90px;
+    border: 1px solid #a67c56;
+    background-color: #1c2226;
+    color: #ccc987;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.bottom-content .left-section button:hover {
+    background-color: #3b4953;
+}
+.bottom-content .right-section{
+    width: 100%;
+}
+.bottom-content .right-section .images {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-content .right-section .images img {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.swiper{
+    width: 1205px;
+    height: 100%;
+    
+}
+.footer{
+    background-color:black;
+    height: 80px;
+    width: 100%;
 }

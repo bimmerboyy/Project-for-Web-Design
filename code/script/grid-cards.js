@@ -6,10 +6,20 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 });
 
-async function getApi() {
+async function getApi(zanr = 'sve') {
     let result = await fetch('https://api.tvmaze.com/shows');
     let data = await result.json();
+    if (zanr === 'sve') {
+        data.forEach((movie, index) => createCard(movie, index));
+        return;
+    }
+    data = data.filter((movie, index) => {
+        return movie.genres[0] === zanr;
+    })
     data.forEach((movie, index) => createCard(movie, index));
+
+
+
 }
 let cards = [];
 
@@ -41,26 +51,14 @@ function createCard(movie, index) {
 
     let parent = document.querySelector('.grid-card');
     parent.innerHTML += card;
-    cards = document.querySelectorAll('.card');
-
-}
-
-let select = document.querySelector('select');
-
-
-console.log(cards);
-
-// select.addEventListener('change', );
-
-
-
-let choseGenere = (movie) => {
-    let opt = select.options[select.selectedIndex];
-    if (opt.value === 'Drama') {
-
-    }
-
-
 
 
 }
+
+let promeniZanr = async() => {
+    let zanr = document.querySelector('select').value;
+    let parent = document.querySelector('.grid-card');
+    parent.innerHTML = "";
+    await getApi(zanr);
+
+};

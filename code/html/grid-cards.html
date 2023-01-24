@@ -60,10 +60,11 @@
     <div class="main-content">
         <div class="select-df">
             <div class="select">
-                <select name="format" id="format">
-                    <option selected disabled>Izaberi žanr</option>
-                    <option value="drama">Drama</option>
-                    <option value="action">Action</option>
+                <select name="format" id="format" onchange="promeniZanr()">
+                    <option selected disabled >Izaberi žanr</option>
+                    <option value="sve">Sve</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Action">Action</option>
         
                 </select>
             </div>

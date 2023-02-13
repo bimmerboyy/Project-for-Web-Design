@@ -7,13 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oaza Serija</title>
     <link rel="icon" href="../images/LOGO.png">
-    <link rel="stylesheet" href="../style/grid-cards.css">
-
-
+    <link rel="stylesheet" href="../style/sign-up.css">
 </head>
 
-<body onload='getApi()'>
-
+<body>
     <div class="navbar">
         <div class="first-section">
             <div class="translators">
@@ -56,39 +53,25 @@
         </div>
     </div>
 
-
     <div class="main-content">
-        <div class="select-df">
-            <div class="select">
-                <select name="format" id="format" onchange="promeniZanr()">
-                    <option selected disabled >Izaberi žanr</option>
-                    <option value="sve">Sve</option>
-                    <option value="Drama">Drama</option>
-                    <option value="Action">Action</option>
-        
-                </select>
+        <div class="transparent">
+            <div class="signup-div">
+                <p class="napravite-nalog">Napravite nalog</p>
+                <div class="sign-up-box">
+                    <form action="">
+                        <div class="name-surname">
+                            <input type="text" name="" id="">
+                            <input type="text" name="" id="">
+                        </div>
+                        <input type="text" id="email">
+                        <input type="text" name="" id="password">
+                        <input type="text" id="repeat-password">
+                    </form>
+                </div>
             </div>
-
         </div>
-
-        <div class="cards">
-            <div class="grid-card">
-
-
-            </div>
-
-        </div>
-
-
-
-
     </div>
-    <div class="footer">
-        <p>Sajt izradio Tarik Kučević.© Zaštićen autorskim pravima.Novi Pazar,Srbija.</p>
-    </div>
-
-
-    <script src="../script/grid-cards.js" defer></script>
+    <script src="../script/sign-up.js"></script>
 </body>
 
 </html>

@@ -38,7 +38,7 @@
                 <div><a href="../html/main-page.html">POČETNA</a></div>
                 <div> <a href="../html/grid-cards.html">SERIJE</a></div>
                 <div> <a href="">NOVOSTI</a></div>
-                <div> <a href="">KONTAKT</a></div>
+                <div> <a href="../html/contact.html">KONTAKT</a></div>
                 <div> <a href="">O NAMA</a></div>
             </div>
 
@@ -48,28 +48,35 @@
 
         </div>
         <div class="third-section">
-            <button class="uloguj-se"><span>ULOGUJ</span> &nbsp; <span>SE</span>  </button>
+            <a href="../html/sign-up.html"><button class="uloguj-se"><span>ULOGUJ</span> &nbsp; <span>SE</span>  </button></a>
             <img src="../images/pored-btn.png" alt="pocetak-btn">
         </div>
     </div>
 
     <div class="main-content">
-        <div class="transparent">
-            <div class="signup-div">
-                <p class="napravite-nalog">Napravite nalog</p>
-                <div class="sign-up-box">
-                    <form action="">
-                        <div class="name-surname">
-                            <input type="text" name="" id="">
-                            <input type="text" name="" id="">
-                        </div>
-                        <input type="text" id="email">
-                        <input type="text" name="" id="password">
-                        <input type="text" id="repeat-password">
-                    </form>
-                </div>
+
+        <div class="signup-div">
+            <p class="napravite-nalog">Napravite nalog</p>
+            <div class="sign-up-box">
+                <form action="">
+                    <div class="name-surname">
+                        <input type="text" name="" id="" placeholder="Unesite ime">
+                        <input type="text" name="" id="" placeholder="Unesite prezime">
+                    </div>
+                    <input type="text" id="email" placeholder="Unesite email">
+                    <input type="text" name="" id="password" placeholder="Unesite sifru">
+                    <input type="text" id="repeat-password" placeholder="Potvrdite sifru">
+                </form>
             </div>
+            <div class="potvrdi-btn">
+                <button class="potvrdi">Potvrdi</button>
+            </div>
+
         </div>
+
+    </div>
+    <div class="footer">
+        <p>Sajt izradio Tarik Kučević.© Zaštićen autorskim pravima.Novi Pazar,Srbija.</p>
     </div>
     <script src="../script/sign-up.js"></script>
 </body>

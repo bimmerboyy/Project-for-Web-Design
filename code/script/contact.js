@@ -17,6 +17,17 @@ let surrname = document.querySelector('#prezime');
 let errorSurname = document.querySelector('.error-surrname');
 let surrnameSpan = errorSurname.querySelector('#surrnameSpan');
 
+let email = document.querySelector('#email');
+let errorEmail = document.querySelector('.error-email');
+let emailSpan = errorEmail.querySelector('#emailSpan');
+
+
+let text = document.querySelector('#text');
+let errorText = document.querySelector('.error-text');
+let textSpan = errorText.querySelector('#textSpan');
+
+
+
 
 
 
@@ -44,6 +55,7 @@ potvrdi.addEventListener('click', () => {
         errorSurname.style.display = 'flex';
         errorSurname.style.width = '140px';
         surrnameSpan.innerText = "Unesite prezime";
+        console.log(surrname.value);
     } else {
         errorSurname.style.display = 'none';
     }
@@ -55,7 +67,48 @@ potvrdi.addEventListener('click', () => {
         surrnameSpan.innerText = "Prezime nije ispravno";
         errorSurname.style.width = '180px';
     }
+    //email
+    if (email.value === '' || email.value === null) {
+        errorEmail.style.display = 'flex';
+        errorEmail.style.width = '130px';
+        emailSpan.innerText = "Unesite email";
+        console.log(email.value);
 
+    } else {
+        errorSurname.style.display = 'none';
+        console.log(email.value);
 
+    }
+    let emailUzorak = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (emailUzorak.test(email.value) || email.value === '') {
+
+    } else {
+        errorEmail.style.display = 'flex';
+        emailSpan.innerText = "Email nije ispravan";
+        errorEmail.style.width = '160px';
+    }
+    //text polje
+
+    if (text.value === '' || text.value === null) {
+        errorText.style.display = 'flex';
+        errorText.style.width = '110px';
+        textSpan.innerText = "Unesite text";
+        console.log(text.value);
+
+    } else {
+        errorSurname.style.display = 'none';
+        console.log(text.value);
+
+    }
+    let textUzorak = /(?:[.?!]\s+)([A-Z])/g;
+    if (emailUzorak.test(text.value) || text.value === '') {
+
+    } else {
+
+        errorText.style.display = 'flex';
+        textSpan.innerText = "Text nije ispravan";
+        errorText.style.width = '150px';
+    }
+    console.log(text.value);
 
 });

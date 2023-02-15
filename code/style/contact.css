@@ -544,3 +544,53 @@ body {
     bottom: -21%;
     left: 10%;
 }
+
+.error-email {
+    position: absolute;
+    left: 60%;
+    top: 106%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #d60101;
+    display: none;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.error-email::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #ffffff;
+    position: absolute;
+    bottom: -21%;
+    left: 10%;
+}
+
+.error-text {
+    position: absolute;
+    left: 60%;
+    top: 115%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #d60101;
+    display: none;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.error-text::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #ffffff;
+    position: absolute;
+    bottom: -21%;
+    left: 10%;
+}

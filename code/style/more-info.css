@@ -103,6 +103,10 @@ body {
     height: 40px;
 }
 
+.third-section a {
+    text-decoration: none;
+}
+
 .third-section .uloguj-se {
     background-color: #926e45;
     color: #ccc987;

@@ -92,6 +92,10 @@ body {
     align-items: center;
 }
 
+.third-section a {
+    text-decoration: none;
+}
+
 .third-section img {
     width: 70px;
     margin-right: 30px;

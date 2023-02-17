@@ -424,3 +424,33 @@ body {
         width: 170px;
     }
 }
+
+
+/*responsive*/
+
+@media (max-width:750px) {
+    .info-part {
+        padding: 0;
+    }
+    .main-content {
+        width: 600px;
+    }
+}
+
+@media (max-width:650px) {
+    .info-part {
+        width: 500px;
+    }
+}
+
+@media (max-width:550px) {
+    .info-part {
+        width: 400px;
+    }
+    #main-info {
+        width: 400px;
+    }
+    .main-content {
+        width: 500px;
+    }
+}

@@ -410,3 +410,197 @@ body {
         width: 170px;
     }
 }
+
+@media (max-width:850px) {
+    .main-content .signup-div {
+        width: 650px;
+    }
+    .main-content .signup-div .sign-up-box input {
+        width: 200px;
+    }
+    #email {
+        width: 450px;
+    }
+    #password {
+        width: 450px;
+    }
+    #repeat-password {
+        width: 450px;
+    }
+    .signup-div .potvrdi-btn .potvrdi {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width:650px) {
+    .main-content .signup-div {
+        width: 550px;
+    }
+    .main-content .signup-div .sign-up-box input {
+        width: 150px;
+    }
+    #email {
+        width: 350px;
+    }
+    #password {
+        width: 350px;
+    }
+    #repeat-password {
+        width: 350px;
+    }
+    .signup-div .potvrdi-btn .potvrdi {
+        margin-left: 100px;
+    }
+    .signup-div .napravite-nalog {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:550px) {
+    .main-content .signup-div {
+        width: 400px;
+    }
+    .main-content .signup-div .sign-up-box input {
+        width: 120px;
+    }
+    #email {
+        width: 280px;
+    }
+    #password {
+        width: 280px;
+    }
+    #repeat-password {
+        width: 280px;
+    }
+    .signup-div .potvrdi-btn .potvrdi {
+        margin-left: 150px;
+    }
+    .signup-div .napravite-nalog {
+        margin-left: 250px;
+    }
+}
+
+.error {
+    position: absolute;
+    left: 38%;
+    top: 45%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #d60101;
+    display: none;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.error::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #ffffff;
+    position: absolute;
+    bottom: -21%;
+    left: 10%;
+}
+
+.error-surrname {
+    position: absolute;
+    left: 55%;
+    top: 45%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #d60101;
+    display: none;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.error-surrname::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #ffffff;
+    position: absolute;
+    bottom: -21%;
+    left: 10%;
+}
+
+.error-email {
+    position: absolute;
+    left: 40%;
+    top: 52%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #d60101;
+    display: none;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.error-email::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #ffffff;
+    position: absolute;
+    bottom: -21%;
+    left: 10%;
+}
+
+.error-password {
+    position: absolute;
+    left: 40%;
+    top: 57%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #d60101;
+    display: none;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.error-password::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #ffffff;
+    position: absolute;
+    bottom: -21%;
+    left: 10%;
+}
+
+.error-password-repeat {
+    position: absolute;
+    left: 40%;
+    top: 62%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #d60101;
+    display: none;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.error-password-repeat::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #ffffff;
+    position: absolute;
+    bottom: -21%;
+    left: 10%;
+}

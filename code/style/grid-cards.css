@@ -403,3 +403,18 @@ select {
     justify-content: center;
     align-items: center;
 }
+
+
+/* responsive*/
+
+@media (max-width:1300px) {
+    .grid-card {
+        grid-template-columns: 400px 400px;
+    }
+}
+
+@media (max-width:900px) {
+    .grid-card {
+        grid-template-columns: 400px;
+    }
+}

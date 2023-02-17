@@ -60,12 +60,19 @@
             <div class="sign-up-box">
                 <form action="">
                     <div class="name-surname">
-                        <input type="text" name="" id="" placeholder="Unesite ime">
-                        <input type="text" name="" id="" placeholder="Unesite prezime">
+                        <label for="" class="error"><i class="fa-solid fa-circle-exclamation"></i><span id="nameSpan"></span> </label>
+                        <input type="text" name="" id="ime" placeholder="Unesite ime">
+                        <label for="" class="error-surrname"><i class="fa-solid fa-circle-exclamation"></i><span id="surrnameSpan"></span> </label>
+                        <input type="text" name="" id="prezime" placeholder="Unesite prezime">
                     </div>
+                    <label for="" class="error-email"><i class="fa-solid fa-circle-exclamation"></i><span id="emailSpan"></span> </label>
                     <input type="text" id="email" placeholder="Unesite email">
-                    <input type="text" name="" id="password" placeholder="Unesite sifru">
-                    <input type="text" id="repeat-password" placeholder="Potvrdite sifru">
+                    <label for="" class="error-password"><i class="fa-solid fa-circle-exclamation"></i><span id="passwordSpan"></span> </label>
+
+                    <input type="password" name="" id="password" placeholder="Unesite sifru">
+                    <label for="" class="error-password-repeat"><i class="fa-solid fa-circle-exclamation"></i><span id="passwordRepeatSpan"></span> </label>
+
+                    <input type="password" id="repeat-password" placeholder="Potvrdite sifru">
                 </form>
             </div>
             <div class="potvrdi-btn">
@@ -78,6 +85,8 @@
     <div class="footer">
         <p>Sajt izradio Tarik Kučević.© Zaštićen autorskim pravima.Novi Pazar,Srbija.</p>
     </div>
+    <script src="https://kit.fontawesome.com/4f1f210561.js" crossorigin="anonymous"></script>
+
     <script src="../script/sign-up.js"></script>
 </body>
 

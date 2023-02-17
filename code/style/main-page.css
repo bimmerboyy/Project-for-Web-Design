@@ -108,6 +108,10 @@
                         display: flex;
                     }
                     
+                    .third-section a {
+                        text-decoration: none;
+                    }
+                    
                     .third-section img {
                         margin-left: 50px;
                     }

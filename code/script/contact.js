@@ -72,20 +72,21 @@ potvrdi.addEventListener('click', () => {
         errorEmail.style.display = 'flex';
         errorEmail.style.width = '130px';
         emailSpan.innerText = "Unesite email";
-        console.log(email.value);
+        console.log("1" + email.value);
 
     } else {
-        errorSurname.style.display = 'none';
-        console.log(email.value);
+        errorEmail.style.display = 'none';
+        console.log("2" + email.value);
 
     }
     let emailUzorak = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (emailUzorak.test(email.value) || email.value === '') {
-
+        console.log("3" + email.value);
     } else {
         errorEmail.style.display = 'flex';
         emailSpan.innerText = "Email nije ispravan";
         errorEmail.style.width = '160px';
+        console.log("4" + email.value);
     }
     //text polje
 
@@ -96,12 +97,12 @@ potvrdi.addEventListener('click', () => {
         console.log(text.value);
 
     } else {
-        errorSurname.style.display = 'none';
+        errorText.style.display = 'none';
         console.log(text.value);
 
     }
     let textUzorak = /(?:[.?!]\s+)([A-Z])/g;
-    if (emailUzorak.test(text.value) || text.value === '') {
+    if (textUzorak.test(text.value) || text.value === '') {
 
     } else {
 

@@ -7,11 +7,11 @@ toggleButton.addEventListener('click', () => {
 });
 
 
-// const textAnimation = () => {
-//     let mainContent = document.querySelector('.lord-of-rings');
-//     console.log(mainContent);
-//     mainContent.classList.toggle('popup');
-//     console.log(mainContent.classList);
-// };
+const textAnimation = () => {
+    let mainContent = document.querySelector('.lord-of-rings');
+    console.log(mainContent);
+    mainContent.classList.toggle('popup');
+    console.log(mainContent.classList);
+};
 
-// textAnimation();
+textAnimation();

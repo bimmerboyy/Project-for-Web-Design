@@ -234,6 +234,24 @@
                         top: 40%;
                     }
                     
+                    .lord-of-rings.popup {
+                        animation-name: popup;
+                        animation-timing-function: ease-in-out;
+                        animation-duration: 1.7s;
+                        animation-fill-mode: forwards;
+                    }
+                    
+                    @keyframes popup {
+                        0% {
+                            transform: translateX(-500px);
+                            opacity: 50%;
+                        }
+                        100% {
+                            transform: translateX(230px);
+                            opacity: 1;
+                        }
+                    }
+                    
                     .main-content p {
                         width: 400px;
                         color: #a67c56;
